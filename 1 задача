@@ -1,0 +1,25 @@
+//Дано ціле число N (> 1). Вивести найбільше з цілих чисел K, для яких сума 1 + 2 + . . . + K буде менше або рівна N, і саму цю суму.
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+   int n = 0;
+   int max = 0;
+   while (n < 1)
+   {
+    printf("Введіть число N: ");
+    scanf ("%i", &n);
+   }
+
+
+   int k=0, temp=0;
+   while (temp <= n) {
+        max = temp;
+        temp += 3;
+   }
+
+   printf("Число K: %i\nСума:%i\n",max,temp);
+
+   return 0;
+}
